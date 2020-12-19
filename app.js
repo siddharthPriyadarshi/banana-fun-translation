@@ -2,4 +2,7 @@
 // using the API
 
 var input=prompt("What is your name ?")
-alert("My name is " +input)
+
+var welcomeMessage="Your name is"+ input;
+
+alert(welcomeMessage);

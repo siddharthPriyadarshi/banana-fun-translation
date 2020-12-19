@@ -1,8 +1,11 @@
-// Banana fun translation app 
-// using the API
+var btnTranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input");
 
-var input=prompt("What is your name ?")
+console.log(txtInput)
 
-var welcomeMessage="Your name is"+ input;
+function clickHandler() { 
+    console.log("clicked");
+    console.log("input", txtInput.value);
+}
 
-alert(welcomeMessage);
+btnTranslate.addEventListener("click", clickHandler);

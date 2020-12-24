@@ -7,41 +7,74 @@
     <title>banana speak</title>
 
     <style>
+        #main{
+            margin: auto;
+            display:block;
+            background-color: rgb(223, 223, 219);
+            padding-bottom: 2rem;
+            border-radius: 0.5rem;
+        }
+
+
         #btn-translate {
             display: block;
+            margin: auto;
+            padding: 1rem;
+            font-size:large;
+            color: brown;
+            background-color: yellow;
+            
         }
 
         textarea {
             display: block;
             width: 80%;
             height: 10vh;
-            margin: 1rem;
+            margin: 1rem 8.4rem;
             padding: 1rem;
+
         }
 
         #output {
             border: 1px solid black;
             height: 10vh;
             width: 80%;
-            margin: 1rem;
+            margin: 1rem 8.4rem;
             padding: 1rem;
+            background-color: white;
+        }
+
+        #heading {
+            background-color: rgb(241, 241, 58);
+            padding: 1rem;
+            margin: auto;
+            border-radius: 1rem;
+            text-align: center;
+            font-style: italic;
+            color: brown;
+        }
+
+        #output-desc{
+            display: block;
+            margin: 1rem 8.4rem;
         }
     </style>
 
 </head>
 
 <body>
+    <div id="main">
+        <h1 id="heading">Hey banana</h1>
 
-    <h1>Hey banana</h1>
+        <textarea id="txt-input"
+            placeholder="Write down the text in the English and we will convert it into the Banana "></textarea>
 
-    <textarea id="txt-input"
-        placeholder="Write down the text in the English and we will convert it into the Banana "></textarea>
+        <button id="btn-translate">Translate</button>
 
-    <button id="btn-translate">Translate</button>
+        <div style="font-size:larger" id="output-desc">Output will come here 👇 </div>
 
-    <div style="font-size:larger">Output will come here 👇 </div>
-
-    <div id="output"></div>
+        <div id="output"></div>
+    </div>
 
     <script src="app.js" type="text/javascript"></script>
 </body>
